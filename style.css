@@ -1,6 +1,7 @@
 body {
     background-color: #27262c;
     font-family: Arial, Helvetica, sans-serif;
+    text-alignment: center;
 }
 
 h1 {
@@ -9,6 +10,7 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 p {
