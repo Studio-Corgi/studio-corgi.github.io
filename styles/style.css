@@ -50,6 +50,10 @@ a:hover {
     color: #fcdaad;
 }
 
+a:visited {
+    color: #b8986e;
+}
+
 
 
 .button {
