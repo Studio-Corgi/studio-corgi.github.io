@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@ body {
 h1 {
     font-size: 10vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(to right, rgba(255, 215, 215, 0) 0%, rgba(255, 225, 225, 0.5) 20%, rgba(240, 179, 122, 0.123) 61%), linear-gradient(rgb(228, 170, 104) 52%, rgb(255, 235, 210) 61%);
+    background: linear-gradient(rgb(228, 170, 104) 60%, rgb(255, 235, 210) 70%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -27,18 +27,27 @@ p, footer, main {
     font-size: 2w;
     color: white;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 details {
-    color:#fcdaad
+    color: #fcdaad;
 }
 
 section {
-    margin-top: 25px
+    margin-top: 25px;
 }
 
 li, a, button {
-    font-family: "Montserrat", sans-serif
+    font-family: 'Poppins', sans-serif;
+}
+
+a:link {
+    color: #b8986e;
+}
+
+a:hover {
+    color: #fcdaad;
 }
 
 
@@ -46,7 +55,6 @@ li, a, button {
 .button {
     background-color: #fcdaad;
     border: none;
-    color: rgb(105, 81, 49);
     padding: 10px 20px 10px 20px;
     margin: 10px;
     text-align: center;
@@ -90,21 +98,28 @@ li, a, button {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
     background: linear-gradient(90deg, transparent, rgb(255, 223, 186, 0.2), transparent);
-    transition: 1s;
+    z-index: -1;
+    transition: .5s;
+    
 }
 
 .header:hover::after {
-    left: 100%;
+    opacity: 100%;
 }
 
 .logo {
+    font-family: 'Montserrat', sans-serif;
     white-space: nowrap;
     font-size: 2rem;
-    color:#fcdaad;
+    background: linear-gradient(rgb(228, 170, 104) 60%, rgb(255, 235, 210) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
     font-weight: 700;
 }
@@ -169,13 +184,13 @@ li, a, button {
     }
 
     #menu-check:checked~.navbar {
-        height: 16rem;
+        height: 17.7rem;
     }
 
     .navbar a {
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin: 1.7rem 0;
         text-align: center;
         transform: translateY(-50px);
         opacity: 0;
