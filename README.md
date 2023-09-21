@@ -1,2 +1,2 @@
 # studio-corgi.github.io
-Corgi website
+Repository for a corgi website

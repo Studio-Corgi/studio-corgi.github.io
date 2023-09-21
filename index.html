@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
     <head>
         <title>Studio Corgi</title>
+        <meta name="description" content="">
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta content="Embed Title" property="og:title" />
+        <meta content="Site Description" property="og:description" />
+        <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+        <meta content="https://embed.com/embedimage.png" property="og:image" />
+        <meta content="#fcdaad" data-react-helmet="true" name="theme-color" />
         
         <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     
     <body>
@@ -17,12 +25,18 @@
         <header class="header">
             <a class="logo">studio corgi</a>
 
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            
             <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Project Corgi</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <a href="#" style="--i:0;">Home</a>
+                <a href="#" style="--i:1;">About</a>
+                <a href="#" style="--i:2;">Project Corgi</a>
+                <a href="#" style="--i:3;">Blog</a>
+                <a href="#" style="--i:4;">Contact Us</a>
             </nav>
             
         </header>
@@ -31,18 +45,16 @@
         <main>
             <section>
                 <h1>studio corgi</h1>
-                <p>Welcome to <em><span class="spanCorgiBold">Studio Corgi</span></em>!</p>
+                <p>Welcome to <em><span class="corgiBold">Studio Corgi</span></em>!</p>
                 <br>
-                <p>This page is a <span class="spanCorgiBold">work in progress</span>, so check back later for website improvements.</p>
+                <p>This page is a <span class="corgiBold">work in progress</span>, so check back later for website improvements.</p>
             </section>
 
-                <br>  
-                <br>
                 <br>
 
             <section>
                 <details>
-                    <summary><span class="spanCorgiBold">What is Studio Corgi?</span></summary>
+                    <summary><span class="corgiBold">What is Studio Corgi?</span></summary>
                     <br>
                     <p><em>a studio room full of corgis please help theyre everywhere i cant get them out idk if dogs can even pay rent</em></p>
                 </details>
@@ -50,7 +62,7 @@
                 <br>
 
                 <details>
-                    <summary><span class="spanCorgiBold">When will this website be finished?</span></summary>
+                    <summary><span class="corgiBold">When will this website be finished?</span></summary>
                     <br>
                     <p><em>never</em></p>
                 </details>
