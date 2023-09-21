@@ -95,6 +95,12 @@ a:visited {
     height: 100%;
     background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
+    /* Compatability tags for safari */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    /* Draws blur behind everything */
     z-index: -1;
 }
 
