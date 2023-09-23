@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <title>Project Corgi - Studio Corgi</title>
     <meta name="description" content="A page containing information about the upcoming game, Project Corgi (working title)">
@@ -11,16 +11,17 @@
     <meta content="Project Corgi" property="og:title" />
     <meta content="A page containing information about the upcoming game, Project Corgi (working title)" />
     <meta content="https://studio-corgi.github.io/index.html" property="og:url" />
-    <meta content="/images/corgistock.jpg" property="og:image" />
+    <meta content="../images/corgistock.jpg" property="og:image" />
     <meta content="#fcdaad" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
     
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html" class="logo">studio corgi</a>
+        <a href="./" class="logo">studio corgi</a>
 
         <input type="checkbox" id="menu-check">
         <label for="menu-check" class="icons">
@@ -29,18 +30,26 @@
         </label>
         
         <nav class="navbar">
-            <a href="index.html" style="--i:0;">Home</a>
-            <a href="about.html" style="--i:1;">About</a>
-            <a href="project-corgi.html" style="--i:2;">Project Corgi</a>
-            <a href="blog.html" style="--i:3;">Blog</a>
-            <a href="contact-us.html" style="--i:4;">Contact</a>
+            <a href="./" style="--i:0;">Accueil</a>
+            <a href="./about" style="--i:1;">À propos</a>
+            <a href="./project-corgi" style="--i:2;">Project Corgi</a>
+            <a href="./blog" style="--i:3;">Blog</a>
+            <a href="./contact-us" style="--i:4;">Contact</a>
         </nav>
         
     </header>
 
     <main>
         <h2>Project Corgi</h2><br>
-        <p><abbr title="Work in progress"></abbr>WIP</p>
+        <p>En construction</p>
     </main>
+
+    <footer>
+        <nav>
+            <a href="https://github.com/Studio-Corgi" class="button"><i class='bx bxl-github'></i>Github</a>
+            <p>Ce site est disponible en <a href="../en/">English</a> et <a href="../fr/">French</a>.</p>
+            <p>Faisais avec <span class="pulse"><i class='bx bxs-heart'></i></span> par <span class="lunauiBold">Lunaui</span></p>
+        <nav>
+    </footer>
 </body>
 </html>

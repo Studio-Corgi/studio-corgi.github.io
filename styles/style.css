@@ -54,6 +54,10 @@ a:visited {
     color: #b8986e;
 }
 
+footer {
+    font-size: 70%;
+}
+
 
 
 .button {
@@ -97,10 +101,8 @@ a:visited {
     backdrop-filter: blur(50px);
     /* Compatability tags for safari */
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+    -webkit-backdrop-filter: blur(50px);
     transform: translate3d(0, 0, 0);
     /* Draws blur behind everything */
     z-index: -1;
@@ -158,6 +160,35 @@ a:visited {
     display: none;
 }
 
+.pulse {
+    /* Chrome, Safari, Opera */
+    -webkit-animation: pulseAnimate 1s infinite; 
+ 
+    /* Firefox */
+    -moz-animation: pulseAnimate 1s infinite;
+ 
+    /* Standard Syntax */
+    animation: pulseAnimate 1.25s infinite; 
+}
+
+@-webkit-keyframes pulseAnimate {
+   100% {
+       opacity: 0.4;
+   }
+}
+
+@-moz-keyframes pulseAnimate {
+   100% {
+       opacity: 0.4;
+   }
+}
+
+@keyframes pulseAnimate {
+   100% {
+       opacity: 0.4;
+   }
+}
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
     .header {
@@ -192,12 +223,7 @@ a:visited {
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         /* Compatability tags for safari */
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        -webkit-backdrop-filter: blur(50px);
         overflow: hidden;
         transition: .3s ease;
     }
