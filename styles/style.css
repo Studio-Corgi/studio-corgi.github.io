@@ -58,7 +58,9 @@ footer {
     font-size: 70%;
 }
 
-
+.accent {
+    color: #b1b0af;
+}
 
 .button {
     background-color: #fcdaad;
